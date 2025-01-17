@@ -55,9 +55,10 @@ form && form.addEventListener('submit', function(event) {
             return response.json()
         }
     })
-
+    
     .then(data => {
         if (data) {
+            console.log(data)
             location.assign(`${window.location.origin}/index.html`);
         } else {
             alert('registratsiyadan o`ting')
